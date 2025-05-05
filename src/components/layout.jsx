@@ -1,9 +1,14 @@
+import Header from "../layouts/Header";
+import Footer from "../layouts/Footer";
+import Navbar from "./Navbar";
+
 export default function Layout({ children }) {
-  return (
-    <>
-      <div>Ha Thi Ngan</div>
-      <main>{children}</main>
-      <footer>Mot con vit</footer>
-    </>
-  )
+    return (
+        <>
+            <Header />
+            <Navbar></Navbar>
+            <main>{children}</main>
+            <Footer />
+        </>
+    );
 }
